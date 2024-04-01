@@ -1,7 +1,6 @@
 function checkSpam(str) {
   // ваш код...
-  const reg = /1xBet|XXX/;
-  if(str.match(reg/i) === null)
+  if(str.match(/1xBet|XXX/i) === null)
     return false;
   return true;
 }
