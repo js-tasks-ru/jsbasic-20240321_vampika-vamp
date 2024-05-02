@@ -36,7 +36,7 @@ export default class UserTable {
 </thead>
 <tbody>
 ${
-  this.#list.map(elem => `<tr><td>${elem.name}</td><td>${elem.age}</td><td>${elem.salary}</td><td>${elem.city}</td><td><button>X</button></td></tr>`)
+  this.#list.map(elem => `<tr><td>${elem.name}</td><td>${elem.age}</td><td>${elem.salary}</td><td>${elem.city}</td><td><button>X</button></td></tr>`).join('')
 }
 </tbody>`;
     return table;
